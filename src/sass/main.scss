@@ -1,0 +1,62 @@
+.header{
+  border: 1px solid black;
+  height:450px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.socialMedia{
+  height:10px;
+  width:200px;
+  border: 1px solid black;
+  float:left;
+  margin-top: 50px;
+  padding:20px;
+  position: absolute;
+  left:920px;
+  top:325px;
+}
+
+.headerImg{}
+
+.middleContent{
+  display: flex;
+  flex-direction: row;
+
+  div{
+    border:1px solid black;
+    height:250px;
+    width:350px;
+    margin-top:20px;
+    margin-left: 50px;
+    margin-right: 12px;
+    float:left;
+  }
+}
+
+
+.mainContent{
+  height:800px;
+  width:765px;
+  border: 1px solid black;
+  margin-left: 50px;
+  margin-top:20px;
+  float:left;
+}
+
+.sidebarContainer{
+  display:flex;
+  flex-direction: column;
+}
+
+.sidebar{
+  float:right;
+  border: 1px solid black;
+  height:200px;
+  width:250px;
+  margin-top: 20px;
+  margin-right: 75px;
+  margin-left: 172px;
+}
