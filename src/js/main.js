@@ -1,4 +1,6 @@
 import $ from 'jquery';
+import {newsTemplate} from './news-template.js';
+import {specialsTemplate} from './specials-template.js';
 import {getNews, getMenu, getSpecials, getGoogleAPI} from './requests.js';
 import {googleTOKEN} from './token.js';
 
@@ -22,3 +24,6 @@ function displayLocation () {
 };
 
 displayLocation();
+
+getNews(newsTemplate);
+getMenu(specialsTemplate);

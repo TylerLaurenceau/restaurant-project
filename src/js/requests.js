@@ -2,23 +2,23 @@ import $ from 'jquery';
 
 
 //news/blog ajax request
-function getNews () {
+function getNews (callback) {
   return $.ajax ({
   url: "https://json-data.herokuapp.com/restaurant/news/1",
-  success: console.log
+  success: callback
  })
 }
 
 //fancy menu request
-function getMenu (){
+function getMenu (callback){
 	return $.ajax({
 		url:"https://json-data.herokuapp.com/restaurant/menu/1",
-    success: console.log
+    success: callback
 	})
 }
 
 //daily specials request
-function getSpecials (){
+function getSpecials (data){
 	 return  $.ajax({
 		url:"https://json-data.herokuapp.com/restaurant/special/1",
 		success: console.log
@@ -27,4 +27,5 @@ function getSpecials (){
 
 
 
-export { getNews, getMenu, getSpecials }
+
+export { getNews, getMenu, getSpecials };

@@ -35,20 +35,27 @@
 .middleContent{
   display: flex;
   flex-direction: row;
+}
 
-  div{
-    border:1px solid black;
-    height:250px;
-    width:350px;
-    margin-top:20px;
-    margin-left: 50px;
-    margin-right: 12px;
-    float:left;
-  }
+.news{
+  border:1px solid black;
+  height:250px;
+  width:350px;
+  margin-top:20px;
+  margin-left: 50px;
+  margin-right: 12px;
+  float:left;
 }
 
 .location {
   text-align: center;
+  border:1px solid black;
+  height:250px;
+  width:350px;
+  margin-top:20px;
+  margin-left: 50px;
+  margin-right: 12px;
+  float:left;
 
   .locationHeader{
     font-size: 6em;
@@ -66,6 +73,15 @@
   }
 }
 
+.todaysSpecial{
+  border:1px solid black;
+  height:250px;
+  width:350px;
+  margin-top:20px;
+  margin-left: 50px;
+  margin-right: 12px;
+  float:left;
+}
 
 .mainContent{
   height:800px;
