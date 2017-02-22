@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 .header{
   border: 1px solid black;
   height:450px;
@@ -19,7 +24,13 @@
   top:325px;
 }
 
-.headerImg{}
+.headerImg{
+  background-image: url("../images/insideview1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
 
 .middleContent{
   display: flex;
@@ -33,6 +44,25 @@
     margin-left: 50px;
     margin-right: 12px;
     float:left;
+  }
+}
+
+.location {
+  text-align: center;
+
+  .locationHeader{
+    font-size: 6em;
+    text-align: left;
+    padding-left: 15px;
+  }
+  p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 5em;
+  }
+  .locationContact a {
+    text-decoration: none;
+    color: black;
   }
 }
 

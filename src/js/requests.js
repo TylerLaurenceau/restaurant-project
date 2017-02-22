@@ -1,5 +1,6 @@
 import $ from 'jquery';
 
+
 //news/blog ajax request
 function getNews () {
   return $.ajax ({
