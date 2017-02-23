@@ -47,7 +47,15 @@
   margin-left: 50px;
   margin-right: 12px;
   float:left;
-  font-size: 3em;
+  font-size: 2em;
+
+  .newsDate{
+    font-size: 1em;
+  }
+
+  div{
+    font-size: 1em;
+  }
 }
 
 .location {
@@ -85,6 +93,11 @@
   margin-right: 12px;
   float:left;
   font-size: 2em;
+
+  div{
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
 }
 
 .tabs{
