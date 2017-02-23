@@ -105,6 +105,25 @@
 
 .theStory{
   font-size: 1.5em;
+  height: 500px;
+  width:765px;
+  border:1px solid black;
+}
+
+.theMenu{
+  width:765px;
+  height: 500px;
+  border:1px solid black;
+}
+
+.theReservations{
+  height: 500px;
+  width:765px;
+  border:1px solid black;
+}
+
+.hidden{
+  display: none;
 }
 
 .sidebarContainer{
@@ -118,6 +137,5 @@
   height:200px;
   width:250px;
   margin-top: 20px;
-  margin-right: 75px;
-  margin-left: 172px;
+  margin-left: 159px;
 }
