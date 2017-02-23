@@ -1,5 +1,5 @@
 import $ from 'jquery';
-
+import { flickrTOKEN } from './token';
 
 //news/blog ajax request
 function getNews (callback) {
@@ -25,7 +25,25 @@ function getSpecials (data){
 	})
 }
 
+//flickr API request
+
+function getFlickr (search) {
+  var BASE_URL = "https://api.flickr.com/services/rest";
+
+  var data = $.ajax ({
+    url: BASE_URL,
+   data: {
+       api_key: flickrTOKEN,
+       method: "flickr.photos.getRecent",
+       per_page: 6
+     },
+ success: console.log
+  })
+}
 
 
 
-export { getNews, getMenu, getSpecials };
+
+
+
+export { getNews, getMenu, getSpecials, getFlickr };
