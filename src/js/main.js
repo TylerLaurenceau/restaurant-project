@@ -2,7 +2,7 @@ import $ from 'jquery';
 import {newsTemplate} from './news-template.js';
 import {menuTemplate} from './menu-template.js';
 import {specialsTemplate} from './specials-template.js';
-import {getNews,getMenu,getSpecials,getGoogleAPI,getFlickr} from './requests.js';
+import {getNews,getMenu,getSpecials,getGoogleAPI,getFlickr, processFlickr} from './requests.js';
 import {displayLocation} from './location.js';
 
 
@@ -38,6 +38,6 @@ $(".reservationsButton").on("click", click3);
 
 getNews(newsTemplate);
 getMenu(specialsTemplate);
+getFlickr("food dish", processFlickr);
 getMenu(menuTemplate);
-getFlickr("food dish");
 displayLocation();
