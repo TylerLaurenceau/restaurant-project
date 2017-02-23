@@ -1,45 +1,47 @@
 import $ from 'jquery';
-import { flickrTOKEN } from './token';
+import {
+    flickrTOKEN
+} from './token';
 
 //news/blog ajax request
-function getNews (callback) {
-  return $.ajax ({
-  url: "https://json-data.herokuapp.com/restaurant/news/1",
-  success: callback
- })
+function getNews(callback) {
+    return $.ajax({
+        url: "https://json-data.herokuapp.com/restaurant/news/1",
+        success: callback
+    })
 }
 
 //fancy menu request
-function getMenu (callback){
-	return $.ajax({
-		url:"https://json-data.herokuapp.com/restaurant/menu/1",
-    success: callback
-	})
+function getMenu(callback) {
+    return $.ajax({
+        url: "https://json-data.herokuapp.com/restaurant/menu/1",
+        success: callback
+    })
 }
 
 //daily specials request
-function getSpecials (data){
-	 return  $.ajax({
-		url:"https://json-data.herokuapp.com/restaurant/special/1",
-		success: console.log
-	})
+function getSpecials(data) {
+    return $.ajax({
+        url: "https://json-data.herokuapp.com/restaurant/special/1",
+        success: console.log
+    })
 }
 
 //flickr API request
-function getFlickr (search) {
-  var BASE_URL = "https://api.flickr.com/services/rest";
+function getFlickr(search) {
+    var BASE_URL = "https://api.flickr.com/services/rest";
 
-  var data = $.ajax ({
-    url: BASE_URL,
-   data: {
-       api_key: flickrTOKEN,
-       method: "flickr.photos.search",
-       text: search,
-       format: "json",
-       per_page: 6
-     },
- success: console.log
-  })
+    var data = $.ajax({
+        url: BASE_URL,
+        data: {
+            api_key: flickrTOKEN,
+            method: "flickr.photos.search",
+            text: search,
+            format: "json",
+            per_page: 6
+        },
+        success: console.log
+    })
 }
 
 
@@ -47,4 +49,9 @@ function getFlickr (search) {
 
 
 
-export { getNews, getMenu, getSpecials, getFlickr };
+export {
+    getNews,
+    getMenu,
+    getSpecials,
+    getFlickr
+};
