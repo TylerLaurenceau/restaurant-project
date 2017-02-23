@@ -10,10 +10,12 @@ function menuTemplate(data){
     }
     for (var y = 0; y<data.entrees.length; y++){
       $(".entrees").append(`<div class = "foodTitle">${data.entrees[y].item}:</div>
+                            <span class = "foodPrice">${data.appetizers[x].price}</span>
                             <div class = "foodDescription">${data.entrees[y].description}</div>`)
     }
     for (var z = 0; z<data.sides.length; z++){
       $(".sides").append(`<div class = "foodTitle">${data.sides[z].item}</div>
+                          <span class = "foodPrice">${data.appetizers[x].price}</span>
                           <div class = "foodDescription">${data.sides[z].description}`)
     }
   }

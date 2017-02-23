@@ -1,7 +1,5 @@
 import $ from 'jquery';
-import {
-    flickrTOKEN
-} from './token';
+import {flickrTOKEN} from './token';
 
 //news/blog ajax request
 function getNews(callback) {
