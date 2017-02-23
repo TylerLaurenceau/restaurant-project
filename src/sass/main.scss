@@ -1,3 +1,6 @@
+@import "bulma";
+
+
 * {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -45,6 +48,7 @@
   margin-left: 50px;
   margin-right: 12px;
   float:left;
+  font-size: 3em;
 }
 
 .location {
@@ -58,14 +62,14 @@
   float:left;
 
   .locationHeader{
-    font-size: 6em;
+    font-size: 2em;
     text-align: left;
     padding-left: 15px;
   }
   p {
     margin-top: 10px;
     margin-bottom: 0px;
-    font-size: 5em;
+    font-size: 2em;
   }
   .locationContact a {
     text-decoration: none;
@@ -81,15 +85,26 @@
   margin-left: 50px;
   margin-right: 12px;
   float:left;
+  font-size: 2em;
+}
+
+.tabs{
+  ul{
+    font-size: 3em;
+  }
 }
 
 .mainContent{
   height:800px;
   width:765px;
-  border: 1px solid black;
   margin-left: 50px;
   margin-top:20px;
   float:left;
+  margin-top: 90px;
+}
+
+.theStory{
+  font-size: 1.5em;
 }
 
 .sidebarContainer{
