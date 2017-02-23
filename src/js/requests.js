@@ -1,20 +1,22 @@
 import $ from 'jquery';
-import { flickrTOKEN } from './token';
+import {
+    flickrTOKEN
+} from './token';
 
 //news/blog ajax request
-function getNews (callback) {
-  return $.ajax ({
-  url: "https://json-data.herokuapp.com/restaurant/news/1",
-  success: callback
- })
+function getNews(callback) {
+    return $.ajax({
+        url: "https://json-data.herokuapp.com/restaurant/news/1",
+        success: callback
+    })
 }
 
 //fancy menu request
-function getMenu (callback){
-	return $.ajax({
-		url:"https://json-data.herokuapp.com/restaurant/menu/1",
-    success: callback
-	})
+function getMenu(callback) {
+    return $.ajax({
+        url: "https://json-data.herokuapp.com/restaurant/menu/1",
+        success: callback
+    })
 }
 
 //daily specials request
@@ -42,7 +44,6 @@ function getFlickr (search, callback) {
  success: processFlickr
   })
 
-
 //taking the object from 'getFlickr' and running it through a template literal to populate the page
 function processFlickr (data) {
   console.log(data);
@@ -58,7 +59,9 @@ function processFlickr (data) {
 }
 
 
-
-
-
-export { getNews, getMenu, getSpecials, getFlickr };
+export {
+    getNews,
+    getMenu,
+    getSpecials,
+    getFlickr,
+};

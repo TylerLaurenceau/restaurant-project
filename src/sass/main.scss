@@ -102,15 +102,63 @@
   margin-top: 90px;
 }
 
+.storyTitle{
+  font-size: 4em;
+}
+
 .theStory{
   font-size: 1.5em;
   height: 500px;
   width:765px;
+  line-height: 30px;
 }
 
 .theMenu{
   width:765px;
   height: 500px;
+  font-size: 3.5em;
+
+  .menuTitle{
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .appetizersTitle{
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+
+  .appetizers{
+    margin-bottom: 30px;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+  }
+
+  .entreesTitle{
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+
+  .entrees{
+    margin-bottom: 30px;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+  }
+
+  .sidesTitle{
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+
+  .sides{
+    margin-bottom: 30px;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+  }
+}
+
+.foodDescription{
+  margin-bottom: 20px;
 }
 
 .theReservations{
