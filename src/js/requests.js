@@ -26,7 +26,6 @@ function getSpecials (data){
 }
 
 //flickr API request
-
 function getFlickr (search) {
   var BASE_URL = "https://api.flickr.com/services/rest";
 

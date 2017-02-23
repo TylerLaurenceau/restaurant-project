@@ -61,4 +61,5 @@ displayLocation();
 getNews(newsTemplate);
 getMenu(specialsTemplate);
 
+
 getFlickr("food dish");
