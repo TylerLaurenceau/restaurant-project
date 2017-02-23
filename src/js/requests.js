@@ -34,7 +34,9 @@ function getFlickr (search) {
     url: BASE_URL,
    data: {
        api_key: flickrTOKEN,
-       method: "flickr.photos.getRecent",
+       method: "flickr.photos.search",
+       text: search,
+       format: "json",
        per_page: 6
      },
  success: console.log

@@ -28,4 +28,4 @@ displayLocation();
 getNews(newsTemplate);
 getMenu(specialsTemplate);
 
-getFlickr();
+getFlickr("food dish");
