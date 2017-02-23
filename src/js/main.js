@@ -23,7 +23,40 @@ function displayLocation () {
   $(".location").append(googleMapsHTML);
 };
 
-displayLocation();
+$(".theMenu").addClass("hidden");
+$(".theReservations").addClass("hidden");
 
+//This is what makes the tabs in the content section work.----------------------
+function click1(){
+    $(".theStory").removeClass("hidden");
+    $(".theMenu").addClass("hidden");
+    $(".theReservations").addClass("hidden");
+  }
+
+$(".storyButton").on("click",click1);
+
+function click2(){
+    $(".theStory").addClass("hidden");
+    $(".theMenu").removeClass("hidden");
+    $(".theReservations").addClass("hidden");
+  }
+
+$(".menuButton").on("click",click2);
+
+
+function click3(){
+    $(".theStory").addClass("hidden");
+    $(".theMenu").addClass("hidden");
+    $(".theReservations").removeClass("hidden");
+  }
+
+  $(".reservationsButton").on("click",click3);
+  //----------------------------------------------------------------------------
+
+
+
+
+
+displayLocation();
 getNews(newsTemplate);
 getMenu(specialsTemplate);
