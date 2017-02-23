@@ -37,24 +37,28 @@ function getFlickr (search, callback) {
        text: search,
        format: "json",
        nojsoncallback: 1,
-       per_page: 6
+       per_page: 7,
+       sort: 'interestingness-asc'
      },
  success: processFlickr
-  })
-
-//taking the object from 'getFlickr' and running it through a template literal to populate the page
-function processFlickr (data) {
-  console.log(data);
-    var container = $('.sidebarContainer');
-    var eachPhoto = data.photos.photo;
-    eachPhoto.forEach(function(photo){
-        container.append(`
-            <div class="photoBox">
-                <img src="https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg">
-            </div>`);
-    });
- }
+ })
 }
+//taking the object from 'getFlickr' and running it through a template literal to populate the page
+  function processFlickr (data) {
+    console.log(data);
+      var container = $('.sidebarContainer');
+      var eachPhoto = data.photos.photo;
+      eachPhoto.forEach(function(photo){
+          if (photo.id != '32260398823')  {
+            container.append(`
+              <div class="photoBox">
+                  <img src="https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg">
+              </div>`);
+
+      };
+  });
+}
+
 
 
 export {

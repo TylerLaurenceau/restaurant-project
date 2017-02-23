@@ -98,6 +98,10 @@
     font-size: 1em;
     margin-bottom: 10px;
   }
+  img{
+    height: 245px;
+    width: 315px;
+  }
 }
 
 .tabs{
@@ -124,6 +128,13 @@
   height: 500px;
   width:765px;
   line-height: 30px;
+}
+
+.storyImage img {
+  height: 300px;
+  width: 650px;
+  position: center;
+  margin-left: 50px;
 }
 
 .theMenu{
