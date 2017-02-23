@@ -7,7 +7,6 @@
 }
 
 .header{
-
   height:450px;
   margin-left: 50px;
   margin-right: 50px;
@@ -55,6 +54,11 @@
 
   div{
     font-size: 1em;
+  }
+
+  p{
+    border-right:1px solid lightgrey;
+    padding-right: 20px;
   }
 }
 
@@ -165,13 +169,21 @@
 
   .sides{
     margin-bottom: 30px;
-    border-bottom: 1px solid lightgrey;
     padding-bottom: 10px;
   }
 }
 
+.foodTitle{
+  float:left;
+}
+
 .foodDescription{
   margin-bottom: 20px;
+}
+
+.foodPrice{
+  border-bottom: 1px dashed black;
+  text-align: right;
 }
 
 .theReservations{
@@ -182,11 +194,6 @@
 
 .hidden{
   display: none;
-}
-
-.active{
-  background-color: white;
-    border-color: #dbdbdb;
 }
 
 .sidebarContainer{
