@@ -18,7 +18,7 @@ function getMenu (callback){
 }
 
 //daily specials request
-function getSpecials (data){
+function getSpecials (data) {
 	 return  $.ajax({
 		url:"https://json-data.herokuapp.com/restaurant/special/1",
 		success: console.log
@@ -26,7 +26,7 @@ function getSpecials (data){
 }
 
 //flickr API request
-function getFlickr (search) {
+function getFlickr (search, callback) {
   var BASE_URL = "https://api.flickr.com/services/rest";
 
   var data = $.ajax ({
@@ -36,12 +36,26 @@ function getFlickr (search) {
        method: "flickr.photos.search",
        text: search,
        format: "json",
+       nojsoncallback: 1,
        per_page: 6
      },
- success: console.log
+ success: processFlickr
   })
-}
 
+
+//taking the object from 'getFlickr' and running it through a template literal to populate the page
+function processFlickr (data) {
+  console.log(data);
+    var container = $('.sidebarContainer');
+    var eachPhoto = data.photos.photo;
+    eachPhoto.forEach(function(photo){
+        container.append(`
+            <div class="photoBox">
+                <img src="https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg">
+            </div>`);
+    });
+ }
+}
 
 
 

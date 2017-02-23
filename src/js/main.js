@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import {newsTemplate} from './news-template.js';
 import {specialsTemplate} from './specials-template.js';
-import {getNews, getMenu, getSpecials, getGoogleAPI, getFlickr} from './requests.js';
+import {getNews, getMenu, getSpecials, getGoogleAPI, getFlickr, processFlickr} from './requests.js';
 import {googleTOKEN} from './token.js';
 
 
@@ -62,4 +62,4 @@ getNews(newsTemplate);
 getMenu(specialsTemplate);
 
 
-getFlickr("food dish");
+getFlickr("food dish", processFlickr);
