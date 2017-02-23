@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import {newsTemplate} from './news-template.js';
 import {specialsTemplate} from './specials-template.js';
-import {getNews, getMenu, getSpecials, getGoogleAPI} from './requests.js';
+import {getNews, getMenu, getSpecials, getGoogleAPI, getFlickr} from './requests.js';
 import {googleTOKEN} from './token.js';
 
 
@@ -27,3 +27,5 @@ displayLocation();
 
 getNews(newsTemplate);
 getMenu(specialsTemplate);
+
+getFlickr();
