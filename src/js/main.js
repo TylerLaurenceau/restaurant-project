@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import {newsTemplate} from './news-template.js';
-import {menuTemplate} from './menu-template.js';
+import {menuTemplate, foodAllergyIcons} from './menu-template.js';
 import {specialsTemplate} from './specials-template.js';
 import {getNews,getMenu,getSpecials,getGoogleAPI,getFlickr, processFlickr} from './requests.js';
 import {displayLocation} from './location.js';
@@ -40,4 +40,5 @@ getNews(newsTemplate);
 getMenu(specialsTemplate);
 getFlickr("food dish", processFlickr);
 getMenu(menuTemplate);
+getMenu(foodAllergyIcons);
 displayLocation();
