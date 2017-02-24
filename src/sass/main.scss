@@ -9,7 +9,7 @@
 }
 
 body{
-  background: grey;
+  background: #26323A;
 }
 
 
@@ -24,15 +24,28 @@ img{
   width: 100%; //fallback
 }
 
-.socialMedia{
-  width:400px;
-  height: 500px;
-  border: white 1px solid;
+.companyName{
+  font-size: 12em;
+  margin-left: 445px;
+  padding-top: 50px;
+  font-family: 'Pacifico', cursive;
+  width:450px;
+
+  span{
+    color:yellow;
+  }
+
+  i.fa{
+    color:yellow;
+  }
 }
 
 .button.is-primary{
   float:left;
   display: inline;
+  margin: 3px;
+  border: 1px solid white;
+  padding-top: 3px;
 }
 
 .midPage{
@@ -52,15 +65,14 @@ margin-bottom: 20px;
 }
 
 .socialMedia{
-  height:10px;
-  width:200px;
-
-  float:left;
+  float:right;
   margin-top: 50px;
   padding:20px;
   position: absolute;
   left:920px;
-  top:325px;
+  top:450px;
+  border: 1px solid white;
+  border-radius: 4px;
 }
 
 .headerImg{
@@ -94,6 +106,7 @@ margin-bottom: 20px;
 
 .wordLatestNews{
   font-family: 'Pacifico', cursive;
+  border-bottom: 1px solid lightgrey;
 
 }
 
@@ -128,9 +141,13 @@ margin-bottom: 20px;
 
 .todaysSpecial{
 
+p{
+  font-size: .7em;
+}
 
 div{
   font-family: 'Pacifico', cursive;
+  border-bottom: 1px solid lightgrey;
 }
 img{
   border: 1px solid white;
@@ -141,22 +158,18 @@ img{
 }
 
 .location {
-
   text-align: center;
   height:250px;
-  width:350px;
-  margin-top:20px;
+  margin-top: 87px;
   margin-left: 50px;
   margin-right: 12px;
   float:left;
   border:1px solid lightgrey;
   border-radius: 5px;
+  background: grey;
+  color:black;
+  padding-top: 10px;
 
-  .locationHeader{
-    font-size: 2em;
-    text-align: left;
-    padding-left: 15px;
-  }
   p {
     margin-top: 10px;
     margin-bottom: 0px;
@@ -171,12 +184,20 @@ img{
   }
 }
 
+.locationTitle{
+  font-size: 3em;
+  margin-left: 50px;
+  margin-top: 22px;
+  font-family: 'Pacifico', cursive;
+  border-bottom:1px solid lightgrey;
+}
+
 .todaysSpecial{
   height:250px;
   width:350px;
   margin-top:20px;
   margin-left: 50px;
-  margin-right: 12px;
+  margin-right:0px;
   float:left;
   font-size: 2em;
 
@@ -189,6 +210,10 @@ img{
     width: 315px;
     margin-top: 20px;
     }
+  }
+
+  p.specialDish{
+    font-size:1em;
   }
 
 
@@ -212,13 +237,15 @@ img{
   text-align: center;
   font-size: 2em;
   font-family: 'Pacifico', cursive;
-  margin-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
+  width: 120px;
+  margin: auto;
+  padding-bottom:10px;
 
 }
 
 .storyTitle{
   font-size: 4em;
-
 }
 
 .theStory{
@@ -227,6 +254,10 @@ img{
   line-height: 30px;
   text-align: center;
 
+.paragraphStory{
+  margin-top: 20px;
+  font-size: 1em;
+}
 
   img{
     margin-top: 20px;
@@ -252,6 +283,9 @@ img{
     margin-bottom: 20px;
     font-family: 'Pacifico', cursive;
     text-align: center;
+    border-bottom: 1px solid white;
+    width:300px;
+    margin: auto;
 
   }
 
@@ -260,6 +294,7 @@ img{
     margin-bottom: 10px;
     font-family: 'Pacifico', cursive;
     text-align: center;
+    margin-top: 20px;
 
   }
 
@@ -302,11 +337,12 @@ img{
 
 .foodTitle{
   float:left;
-
+  font-size: .6em;
 }
 
 .foodDescription{
   margin-bottom: 20px;
+  font-size:1em;
 
 }
 
@@ -345,11 +381,16 @@ width: 1000px;
 margin: auto;
 clear: both;
 text-align: center;
+margin-bottom: 150px;
 
 .wordGallery{
   font-size: 3em;
   font-family: 'Pacifico', cursive;
   margin-bottom: 20px;
+  border-bottom: 1px solid white;
+  width:90px;
+  margin:auto;
+  margin-bottom: 30px;
 }
 
 img{
@@ -360,4 +401,27 @@ img{
   border-radius: 2px;
   border: 1px solid lightgrey;
 }
+}
+
+.footer{
+  padding:20px;
+  padding-top: 10px;
+  background:black;
+
+  div{
+    float:left;
+    margin-right: 100px;
+    margin-left: 60px;
+    font-size: 1em;
+  }
+
+  span{
+    color:yellow;
+  }
+
+  .footerTitle{
+    i.fa{
+      color:yellow;
+    }
+  }
 }
