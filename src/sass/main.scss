@@ -4,14 +4,51 @@
 * {
   box-sizing: border-box;
   font-size: 62.5%;
+  color:white;
+  text-shadow: 1px 1px 2px black;
+}
+
+body{
+  background: grey;
+}
+
+
+img{
+  border-radius: 5px;
 }
 
 .header{
-  height:450px;
-  margin-left: 50px;
-  margin-right: 50px;
+  height:600px;
   margin-bottom: 20px;
   position: relative;
+  width: 100%; //fallback
+}
+
+.socialMedia{
+  width:400px;
+  height: 500px;
+  border: white 1px solid;
+}
+
+.button.is-primary{
+  float:left;
+  display: inline;
+}
+
+.midPage{
+  height:600px;
+  margin-bottom: 5px;
+  position: relative;
+  width: 100%; //fallback
+}
+
+.endPage{
+  height:600px;
+margin-bottom: 5px;
+position: relative;
+width: 100%; //fallback
+clear: both;
+margin-bottom: 20px;
 }
 
 .socialMedia{
@@ -34,9 +71,30 @@
   width: 100%;
 }
 
+.midImg{
+  background-image:url("../images/secondimage.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.endImg{
+  background-image:url("../images/thirdimage.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
 .middleContent{
   display: flex;
   flex-direction: row;
+}
+
+.wordLatestNews{
+  font-family: 'Pacifico', cursive;
+
 }
 
 .news{
@@ -47,6 +105,12 @@
   margin-right: 12px;
   float:left;
   font-size: 2em;
+  margin-bottom: 200px;
+
+
+  .newsTitle{
+    font-size: 1.5em;
+  }
 
   .newsDate{
     font-size: 1em;
@@ -62,7 +126,22 @@
   }
 }
 
+.todaysSpecial{
+
+
+div{
+  font-family: 'Pacifico', cursive;
+}
+img{
+  border: 1px solid white;
+}
+.specialsTitle{
+  font-size: 1em;
+}
+}
+
 .location {
+
   text-align: center;
   height:250px;
   width:350px;
@@ -87,6 +166,9 @@
     text-decoration: none;
     color: black;
   }
+  a{
+    font-size:1em;
+  }
 }
 
 .todaysSpecial{
@@ -105,33 +187,51 @@
   img{
     height: 245px;
     width: 315px;
+    margin-top: 20px;
+    }
   }
-}
+
 
 .tabs{
   ul{
     font-size: 3em;
+    font-family: 'Pacifico', cursive;
   }
 }
 
 .mainContent{
-  height:800px;
   width:765px;
-  margin-left: 50px;
-  margin-top:20px;
   float:left;
-  margin-top: 90px;
+  margin-top: 30px;
+  margin-left: 230px;
+  margin-right: 300px;
+  margin-bottom: 50px;
+}
+
+.wordStory{
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 20px;
+
 }
 
 .storyTitle{
   font-size: 4em;
+
 }
 
 .theStory{
   font-size: 1.5em;
-  height: 500px;
   width:765px;
   line-height: 30px;
+  text-align: center;
+
+
+  img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .storyImage img {
@@ -146,61 +246,88 @@
   height: 500px;
   font-size: 3.5em;
 
+
   .menuTitle{
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+
   }
 
   .appetizersTitle{
     font-size: 1em;
     margin-bottom: 10px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+
   }
 
   .appetizers{
     margin-bottom: 30px;
     border-bottom: 1px solid lightgrey;
     padding-bottom: 10px;
+
   }
 
   .entreesTitle{
     font-size: 1em;
     margin-bottom: 10px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+
   }
 
   .entrees{
     margin-bottom: 30px;
     border-bottom: 1px solid lightgrey;
     padding-bottom: 10px;
+
   }
 
   .sidesTitle{
     font-size: 1em;
     margin-bottom: 10px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+
   }
 
   .sides{
     margin-bottom: 30px;
     padding-bottom: 10px;
+
   }
 }
 
 .foodTitle{
   float:left;
+
 }
 
 .foodDescription{
   margin-bottom: 20px;
+
 }
 
 .foodPrice{
-  border-bottom: 1px dashed black;
+  border-bottom: 1px dashed white;
   text-align: right;
+
 }
 
-.theReservations{
+#theReservations{
   height: 500px;
   width:765px;
+}
+
+.label{
   font-size: 2em;
+  color:white;
+}
+
+.button.is-link{
+    color:#EE3B3B;
 }
 
 .hidden{
@@ -208,19 +335,23 @@
 }
 
 .sidebarContainer{
-  display:flex;
-  flex-direction: column;
+width: 1000px;
+margin: auto;
+clear: both;
+text-align: center;
+
+.wordGallery{
+  font-size: 3em;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 20px;
 }
 
-.sidebar{
-  float:right;
+img{
+  width:200px;
   height:200px;
-  width:250px;
-  margin-top: 20px;
-  margin-left: 159px;
+  clear: both;
+  margin: 5px;
+  border-radius: 2px;
+  border: 1px solid lightgrey;
 }
-
-.photoBox img {
-  height: 65%;
-  width: 65%;
 }

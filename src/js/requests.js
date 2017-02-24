@@ -37,7 +37,7 @@ function getFlickr (search, callback) {
        text: search,
        format: "json",
        nojsoncallback: 1,
-       per_page: 7,
+       per_page: 8,
        sort: 'interestingness-asc'
      },
  success: processFlickr
@@ -46,14 +46,11 @@ function getFlickr (search, callback) {
 //taking the object from 'getFlickr' and running it through a template literal to populate the page
   function processFlickr (data) {
     console.log(data);
-      var container = $('.sidebarContainer');
       var eachPhoto = data.photos.photo;
       eachPhoto.forEach(function(photo){
           if (photo.id != '32260398823')  {
-            container.append(`
-              <div class="photoBox">
-                  <img src="https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg">
-              </div>`);
+            $(".sidebarContainer").append(`
+                  <img src="https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg">`);
 
       };
   });
