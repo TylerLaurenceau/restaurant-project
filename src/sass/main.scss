@@ -37,6 +37,7 @@ img{
 
   i.fa{
     color:yellow;
+    font-size: 1em;
   }
 }
 
@@ -107,7 +108,10 @@ margin-bottom: 20px;
 .wordLatestNews{
   font-family: 'Pacifico', cursive;
   border-bottom: 1px solid lightgrey;
-
+  i.fa{
+    color:yellow;
+    font-size:1em;
+  }
 }
 
 .news{
@@ -140,6 +144,11 @@ margin-bottom: 20px;
 }
 
 .todaysSpecial{
+
+  i.fa{
+    color:yellow;
+    font-size:1em;
+  }
 
 p{
   font-size: .7em;
@@ -190,6 +199,11 @@ img{
   margin-top: 22px;
   font-family: 'Pacifico', cursive;
   border-bottom:1px solid lightgrey;
+
+  i.fa{
+    color:yellow;
+    font-size:1em;
+  }
 }
 
 .todaysSpecial{
@@ -275,12 +289,12 @@ img{
 .theMenu{
   width:765px;
   height: 500px;
-  font-size: 3.5em;
+  font-size: 2.8em;
 
 
   .menuTitle{
-    font-size: 1.5em;
-    margin-bottom: 20px;
+    font-size: 1.8em;
+    margin-bottom: 50px;
     font-family: 'Pacifico', cursive;
     text-align: center;
     border-bottom: 1px solid white;
@@ -337,12 +351,12 @@ img{
 
 .foodTitle{
   float:left;
-  font-size: .6em;
+  font-size: .8em;
 }
 
 .foodDescription{
   margin-bottom: 20px;
-  font-size:1em;
+  font-size:.8em;
 
 }
 
@@ -381,7 +395,7 @@ width: 1000px;
 margin: auto;
 clear: both;
 text-align: center;
-margin-bottom: 150px;
+margin-bottom: 100px;
 
 .wordGallery{
   font-size: 3em;
@@ -422,6 +436,7 @@ img{
   .footerTitle{
     i.fa{
       color:yellow;
+      font-size: 1em;
     }
   }
 }
