@@ -4,7 +4,6 @@ import {googleTOKEN} from './token.js';
 
 function displayLocation() {
     var googleMapsHTML = `
-     <p class="locationHeader">Our Location</p>
       <p class="map">
         <iframe
           width="320"
