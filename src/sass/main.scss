@@ -38,6 +38,7 @@ img{
 
   i.fa{
     color:yellow;
+    font-size: 1em;
   }
 }
 
@@ -111,8 +112,8 @@ margin-bottom: 20px;
 
   i.fa{
     color:yellow;
+    font-size:1em;
   }
-
 }
 
 .news{
@@ -145,6 +146,11 @@ margin-bottom: 20px;
 }
 
 .todaysSpecial{
+
+  i.fa{
+    color:yellow;
+    font-size:1em;
+  }
 
 p{
   font-size: .7em;
@@ -202,6 +208,7 @@ img{
 
   i.fa{
     color:yellow;
+    font-size:1em;
   }
 }
 
@@ -288,12 +295,12 @@ img{
 .theMenu{
   width:765px;
   height: 500px;
-  font-size: 3.5em;
+  font-size: 2.8em;
 
 
   .menuTitle{
-    font-size: 1.5em;
-    margin-bottom: 20px;
+    font-size: 1.8em;
+    margin-bottom: 50px;
     font-family: 'Pacifico', cursive;
     text-align: center;
     border-bottom: 1px solid white;
@@ -350,6 +357,7 @@ img{
 
 .foodTitle{
   float:left;
+  font-size: .8em;
   font-size: .85em;
 }
 
@@ -357,7 +365,6 @@ img{
   margin-bottom: 20px;
   font-size: .8em;
   clear: both;
-
 }
 
 .foodPrice{
@@ -423,7 +430,7 @@ width: 1000px;
 margin: auto;
 clear: both;
 text-align: center;
-margin-bottom: 150px;
+margin-bottom: 100px;
 
 .wordGallery{
   font-size: 3em;
@@ -451,10 +458,14 @@ img{
   padding-top: 10px;
   background:black;
 
+  a{
+    font-size: 1em;
+  }
+
   div{
     float:left;
     margin-right: 100px;
-    margin-left: 60px;
+    margin-left: 65px;
     font-size: 1em;
   }
 
@@ -465,6 +476,7 @@ img{
   .footerTitle{
     i.fa{
       color:yellow;
+      font-size: 1em;
     }
   }
 }
