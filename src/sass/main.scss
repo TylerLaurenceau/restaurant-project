@@ -6,6 +6,7 @@
   font-size: 62.5%;
   color:white;
   text-shadow: 1px 1px 2px black;
+  list-style: none;
 }
 
 body{
@@ -108,6 +109,7 @@ margin-bottom: 20px;
 .wordLatestNews{
   font-family: 'Pacifico', cursive;
   border-bottom: 1px solid lightgrey;
+
   i.fa{
     color:yellow;
     font-size:1em;
@@ -157,6 +159,10 @@ p{
 div{
   font-family: 'Pacifico', cursive;
   border-bottom: 1px solid lightgrey;
+
+  i.fa{
+    color:yellow;
+  }
 }
 img{
   border: 1px solid white;
@@ -182,7 +188,7 @@ img{
   p {
     margin-top: 10px;
     margin-bottom: 0px;
-    font-size: 2em;
+    font-size: 3.5em;
   }
   .locationContact a {
     text-decoration: none;
@@ -352,23 +358,52 @@ img{
 .foodTitle{
   float:left;
   font-size: .8em;
+  font-size: .85em;
 }
 
 .foodDescription{
   margin-bottom: 20px;
-  font-size:.8em;
-
+  font-size: .8em;
+  clear: both;
 }
 
 .foodPrice{
   border-bottom: 1px dashed white;
   text-align: right;
+  padding-bottom: 10px;
 
 }
 
-i.fa {
-  font-size: 225%;
+.allergy > i.fa {
+  font-size: 130%;
   padding-right: 15px;
+}
+
+.allergy {
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.blue {
+  color: #3273DC;
+}
+
+.yellow {
+  color: #FFDD57;
+}
+
+.red {
+  color: #8D1D11;
+}
+
+.green {
+  color: #00D1B2;
+}
+
+.greyed {
+  opacity: .2;
 }
 
 
@@ -414,8 +449,9 @@ img{
   margin: 5px;
   border-radius: 2px;
   border: 1px solid lightgrey;
+ }
 }
-}
+
 
 .footer{
   padding:20px;
